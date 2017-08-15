@@ -55,3 +55,6 @@ hook_add = '''
   autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
 '''
 
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
