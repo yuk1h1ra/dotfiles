@@ -12,6 +12,9 @@ set incsearch
 set smartcase
 set wrapscan
 
+" cursorline
+set cursorline
+
 " Key map
 inoremap <silent> jk <ESC> 
 
@@ -30,7 +33,7 @@ function! g:IndentBraces()
   if nowletter == "}" && beforeletter == "{"
     return "\<Enter>\<ESC>\<S-o>\<tab>"
   else
-      return "<Enter>"
+      return "\<Enter>"
   endif
 endfunction
 " Enterに割り当て
