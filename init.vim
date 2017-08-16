@@ -18,27 +18,6 @@ set cursorline
 " Key map
 inoremap <silent> jk <ESC> 
 
-" auto closing parenthesis
-inoremap ( ()<LEFT>
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
-inoremap ' ''<LEFT>
-inoremap " ""<LEFT>
-
-" 隣接した{}で改行したらインデント
-function! g:IndentBraces()
-  let nowletter = getline(".")[col(".")-1]    " 今いるカーソルの文字
-  let beforeletter = getline(".")[col(".")-2] " 1つ前の文字
-  " カーソルの位置の括弧が隣接している場合
-  if nowletter == "}" && beforeletter == "{"
-    return "\<Enter>\<ESC>\<S-o>\<tab>"
-  else
-      return "\<Enter>"
-  endif
-endfunction
-" Enterに割り当て
-inoremap <silent> <expr> <Enter> IndentBraces()
-
 " プラグインがインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
 " dein.vim 本体
