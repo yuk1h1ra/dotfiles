@@ -2,6 +2,7 @@
 set number
 set noswapfile
 set autoindent
+set list
 
 " tab2space
 set expandtab

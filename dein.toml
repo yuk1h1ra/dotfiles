@@ -61,3 +61,9 @@ repo = 'airblade/vim-gitgutter'
 [[plugins]]
 repo = 'cohama/lexima.vim'
 
+[[plugins]]
+repo = 'thinca/vim-zenspace'
+hook_add = '''
+    let g:zenspace#default_mode = 'on'
+    autocmd! ColorScheme * highlight ZenSpace ctermbg=Red guibg=Red
+'''
