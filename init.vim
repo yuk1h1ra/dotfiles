@@ -1,10 +1,12 @@
+" basic
 set number
 set noswapfile
+set autoindent
 
 " tab2space
 set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 
 " Search
 set hlsearch
