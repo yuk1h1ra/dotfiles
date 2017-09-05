@@ -19,7 +19,7 @@ set wrapscan
 set cursorline
 
 " Key map
-inoremap <silent> jk <ESC> 
+inoremap <silent>jk <ESC> 
 
 " プラグインがインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')

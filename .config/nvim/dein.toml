@@ -16,9 +16,6 @@ hook_add = '''
 
 [[plugins]]
 repo = 'Shougo/denite.nvim'
-hook_add = '''
-  nnoremap <silent><C-p> :<C-u>Denite file_rec<CR>
-'''
 
 [[plugins]]
 repo = 'thinca/vim-quickrun'
@@ -55,19 +52,8 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'osyo-manga/shabadou.vim'
-
-[[plugins]]
-repo = 'osyo-manga/vim-watchdogs'
-depends = [
-    'shabadou.vim',
-    'vim-quickrun'
-    'vim-hier'
-]
+repo = 'itchyny/vim-parenmatch'
 hook_add = '''
-    let g:watchdots_check_BufWritePost_enable = 1
+    let g:loaded_matchparen = 1
 '''
-
-[[plugins]]
-repo = 'jceb/vim-hier'
 
