@@ -57,3 +57,6 @@ hook_add = '''
     let g:loaded_matchparen = 1
 '''
 
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
