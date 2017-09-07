@@ -15,6 +15,7 @@ ln -sf ~/dotfiles/.config/nvim/dein_lazy.toml ~/.config/nvim/dein_lazy.toml
 
 # emacs
 ln -sf ~/dotfiles/.emacs.d ~/.emacs.d
+ln -sf ~/dotfiles/.spacemacs ~/.spacemacs
 
 # tmux
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
