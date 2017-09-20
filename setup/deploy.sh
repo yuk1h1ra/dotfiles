@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# dotfiles
-git clone https://github.com/koheishoji/dotfiles.git ~/dotfiles
-
 # fish
 mkdir "$HOME/.config/fish"
 ln -sf ~/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
