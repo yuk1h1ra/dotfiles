@@ -8,14 +8,17 @@ build = 'make'
 [[plugins]]
 repo = 'tomasr/molokai'
 hook_add = '''
-  let g:molokai_original = 1
-  let t_Co = 256
-  let g:rehash256 = 1
-  colorscheme molokai
+    let g:molokai_original = 1
+    let t_Co = 256
+    let g:rehash256 = 1
+    colorscheme molokai
 '''
 
 [[plugins]]
 repo = 'Shougo/denite.nvim'
+hook_add = '''
+    noremap <C-p> :Denite file_rec<CR>
+'''
 
 [[plugins]]
 repo = 'thinca/vim-quickrun'
@@ -29,10 +32,10 @@ hook_add = '''
 [[plugins]]
 repo = 'nathanaelkane/vim-indent-guides'
 hook_add = '''
-  let g:indent_guides_enable_on_vim_startup = 1
-  let g:indent_guides_auto_colors = 0
-  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=black
-  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
+    let g:indent_guides_enable_on_vim_startup = 1
+    let g:indent_guides_auto_colors = 0
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=black
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
 '''
 
 [[plugins]]
