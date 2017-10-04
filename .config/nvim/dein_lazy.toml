@@ -38,6 +38,9 @@ repo = 'kannokanno/previm'
 on_ft = 'markdown'
 hook_source = '''
     let g:previm_open_cmd = 'open -a Firefox'
-    autocmd! BufNewFile, BufRead *.{md, mkd, mark*} set filetype=markdown
+    augroup PrevimSettings
+        autocmd!
+        autocmd BufNewFile, BufRead *.{md, mkd, mark*} set filetype=markdown
+    augroup END
 '''
 
