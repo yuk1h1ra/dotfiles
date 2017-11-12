@@ -18,6 +18,9 @@ set wrapscan
 " cursorline
 set cursorline
 
+" clipboad
+set clipboard=unnamedplus
+
 " Key map
 inoremap <silent>jk <ESC> 
 
