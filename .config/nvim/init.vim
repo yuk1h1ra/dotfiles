@@ -21,9 +21,6 @@ set cursorline
 " clipboad
 set clipboard=unnamedplus
 
-" Key map
-inoremap <silent>jk <ESC> 
-
 " プラグインがインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
 " dein.vim 本体
