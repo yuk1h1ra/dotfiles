@@ -66,5 +66,6 @@ repo = 'tomtom/tcomment_vim'
 [[plugins]]
 repo = 'neomake/neomake'
 hook_add = '''
+    let g:neomake_python_enabled_makers = ['python', 'pep8']
     autocmd! BufWritePost * Neomake
 '''
