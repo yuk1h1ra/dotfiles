@@ -28,3 +28,7 @@ set smartindent
 set noswapfile
 " シンタックスハイライト
 syntax enable
+colorscheme ron
+
+" クリップボード共有
+set clipboard=unnamed
