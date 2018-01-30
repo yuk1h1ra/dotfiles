@@ -4,11 +4,6 @@ set noswapfile
 set autoindent
 set list
 
-" tab2space
-set expandtab
-set tabstop=4
-set shiftwidth=4
-
 " Search
 set hlsearch
 set incsearch
