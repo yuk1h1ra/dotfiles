@@ -32,6 +32,9 @@ on_ft = 'toml'
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
 on_ft = 'markdown'
+hook_source = '''
+    set nofoldenable
+'''
 
 [[plugins]]
 repo = 'kannokanno/previm'
