@@ -4,3 +4,6 @@ set -x PATH $HOME/.pyenv/bin $PATH
 
 # mybin setting
 set -x PATH $HOME/mybin $PATH
+
+# neovim
+alias vim="nvim"
