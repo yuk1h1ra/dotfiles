@@ -22,7 +22,7 @@ set smartcase
 
 set noswapfile
 set clipboard=unnamed
-set list
+set list listchars=tab:>-,trail:-
 
 set expandtab
 set autoindent
@@ -31,7 +31,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
-set wildmenu
+set wildmenu wildmode=list
 
 " colorscheme
 syntax enable
