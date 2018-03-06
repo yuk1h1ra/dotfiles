@@ -1,18 +1,3 @@
-" Plugin Manager with vim-plug
-"
-" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-"             https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-"
-call plug#begin('~/.vim/plugged')
-
-Plug 'jacoborus/tender.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'thinca/vim-quickrun'
-Plug 'airblade/vim-gitgutter'
-Plug 'cohama/lexima.vim'
-
-call plug#end()
-
 set number
 set ruler
 set cursorline
@@ -29,8 +14,7 @@ set smartindent
 set noswapfile
 
 syntax enable
-colorscheme tender
-let g:airline_theme = 'tender'
+colorscheme ron
 
 set clipboard=unnamed
 
