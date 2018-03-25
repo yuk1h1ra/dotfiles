@@ -36,6 +36,7 @@ set wildmenu wildmode=list
 " colorscheme
 syntax enable
 colorscheme tender
+let g:airline_powerline_fonts = 1
 let g:airline_theme = 'tender'
 highlight LineNr ctermfg=gray
 highlight clear CursorLine
