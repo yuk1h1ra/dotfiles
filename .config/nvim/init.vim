@@ -1,7 +1,7 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'jacoborus/tender.vim'
-Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'airblade/vim-gitgutter'
 Plug 'cohama/lexima.vim'
@@ -36,8 +36,11 @@ set wildmenu wildmode=list
 " colorscheme
 syntax enable
 colorscheme tender
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'tender'
+let g:lightline = {
+    \ 'colorscheme': 'tender'
+    \ }
+set laststatus=2
+set noshowmode
 highlight LineNr ctermfg=gray
 highlight clear CursorLine
 
