@@ -6,6 +6,7 @@ Plug 'thinca/vim-quickrun'
 Plug 'airblade/vim-gitgutter'
 Plug 'cohama/lexima.vim'
 Plug 'miyakogi/seiya.vim'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
