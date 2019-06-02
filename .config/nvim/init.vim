@@ -22,7 +22,7 @@ set ignorecase
 set smartcase
 
 set noswapfile
-set clipboard=unnamed
+set clipboard=unnamedplus
 set list listchars=tab:>-,trail:-
 
 set expandtab
