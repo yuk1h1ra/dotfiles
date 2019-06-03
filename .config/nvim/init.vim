@@ -7,6 +7,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'cohama/lexima.vim'
 Plug 'miyakogi/seiya.vim'
 Plug 'leafgarland/typescript-vim'
+" Plug 'w0rp/ale'
+Plug 'simeji/winresizer'
+Plug 'alvan/vim-closetag'
 
 call plug#end()
 
@@ -25,6 +28,7 @@ set noswapfile
 set clipboard=unnamedplus
 set list listchars=tab:>-,trail:-
 
+" ここらへんをもう少しキレイに
 set expandtab
 set autoindent
 set smartindent
@@ -47,3 +51,7 @@ highlight clear CursorLine
 
 " transparent background
 let g:seiya_auto_enable = 1
+
+" winresizer resize size
+let g:winresizer_vert_resize = 1
+let g:winresizer_horiz_resize = 1
