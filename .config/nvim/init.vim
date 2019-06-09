@@ -29,6 +29,14 @@ set noswapfile
 set clipboard=unnamedplus
 set list listchars=tab:>-,trail:-
 
+" colorscheme
+syntax enable
+colorscheme tender
+set laststatus=2
+set noshowmode
+highlight LineNr ctermfg=gray
+highlight clear CursorLine
+
 " ここらへんをもう少しキレイに
 set expandtab
 set autoindent
@@ -77,16 +85,11 @@ let g:lightline = {
     \ },
     \ 'active': {
     \     'left': [ ['mode', 'paste'],
-    \               ['readonly', 'filename', 'modified'],
+    \               ['readonly', 'filename', 'modified', 'charvaluehex'],
     \               ['linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok'] ]
     \ },
+    \ 'component': {
+    \     'charvaluehex': '0x%B'
+    \ },
     \ }
-
-" colorscheme
-syntax enable
-colorscheme tender
-set laststatus=2
-set noshowmode
-highlight LineNr ctermfg=gray
-highlight clear CursorLine
 
