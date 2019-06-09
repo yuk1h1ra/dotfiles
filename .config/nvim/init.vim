@@ -7,9 +7,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'cohama/lexima.vim'
 Plug 'miyakogi/seiya.vim'
 Plug 'leafgarland/typescript-vim'
-" Plug 'w0rp/ale'
 Plug 'simeji/winresizer'
 Plug 'alvan/vim-closetag'
+Plug 'w0rp/ale'
+Plug 'maximbaz/lightline-ale'
 
 call plug#end()
 
@@ -38,20 +39,43 @@ set softtabstop=4
 
 set wildmenu wildmode=list
 
-" colorscheme
-syntax enable
-colorscheme tender
-let g:lightline = {
-    \ 'colorscheme': 'tender'
-    \ }
-set laststatus=2
-set noshowmode
-highlight LineNr ctermfg=gray
-highlight clear CursorLine
-
 " transparent background
 let g:seiya_auto_enable = 1
 
 " winresizer resize size
 let g:winresizer_vert_resize = 1
 let g:winresizer_horiz_resize = 1
+
+" ale settings
+let g:ale_sign_column_always = 1
+
+" lightline settings
+let g:lightline = {
+    \ 'colorscheme': 'tender',
+    \ 'component_expand': {
+    \     'linter_checking': 'lightline#ale#checking',
+    \     'linter_warnings': 'lightline#ale#warnings',
+    \     'linter_errors': 'lightline#ale#errors',
+    \     'linter_ok': 'lightline#ale#ok',
+    \ },
+    \ 'component_type': {
+    \     'linter_checking': 'left',
+    \     'linter_warnings': 'warning',
+    \     'linter_errors': 'error',
+    \     'linter_ok': 'left',
+    \ },
+    \ 'active': {
+    \     'left': [ ['mode', 'paste'],
+    \               ['readonly', 'filename', 'modified'],
+    \               ['linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok'] ]
+    \ },
+    \ }
+
+" colorscheme
+syntax enable
+colorscheme tender
+set laststatus=2
+set noshowmode
+highlight LineNr ctermfg=gray
+highlight clear CursorLine
+
