@@ -48,8 +48,20 @@ let g:winresizer_horiz_resize = 1
 
 " ale settings
 let g:ale_sign_column_always = 1
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_insert_leave = 1
+let g:ale_echo_msg_error_str = "\uf05e "
+let g:ale_echo_msg_warning_str = "\uf071 "
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
 
 " lightline settings
+let g:lightline#ale#indicator_checking = " \uf110 "
+let g:lightline#ale#indicator_warnings = "\uf071 "
+let g:lightline#ale#indicator_errors = "\uf05e "
+let g:lightline#ale#indicator_ok = "\uf00c "
+
 let g:lightline = {
     \ 'colorscheme': 'tender',
     \ 'component_expand': {
