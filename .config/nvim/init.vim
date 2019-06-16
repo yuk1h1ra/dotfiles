@@ -11,6 +11,7 @@ Plug 'simeji/winresizer'
 Plug 'alvan/vim-closetag'
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
+Plug 'rhysd/accelerated-jk'
 
 call plug#end()
 
@@ -93,3 +94,6 @@ let g:lightline = {
     \ },
     \ }
 
+" accelerated-jk settings
+nmap j <Plug>(accelerated_jk_gj)
+nmap k <Plug>(accelerated_jk_gk)
