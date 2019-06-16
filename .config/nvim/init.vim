@@ -12,6 +12,7 @@ Plug 'alvan/vim-closetag'
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
 Plug 'rhysd/accelerated-jk'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
 
@@ -98,3 +99,6 @@ let g:lightline = {
 nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
 let g:accelerated_jk_acceleration_table = [10,20,30,40,50,60,70,80]
+
+" deoplete settings
+let g:deoplete#enable_at_startup = 1
