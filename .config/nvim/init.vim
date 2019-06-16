@@ -6,12 +6,16 @@ Plug 'thinca/vim-quickrun'
 Plug 'airblade/vim-gitgutter'
 Plug 'cohama/lexima.vim'
 Plug 'miyakogi/seiya.vim'
-Plug 'leafgarland/typescript-vim'
 Plug 'simeji/winresizer'
 Plug 'alvan/vim-closetag'
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
 Plug 'rhysd/accelerated-jk'
+Plug 'tpope/vim-surround'
+Plug 'tomtom/tcomment_vim'
+Plug 'editorconfig/editorconfig-vim'
+
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
