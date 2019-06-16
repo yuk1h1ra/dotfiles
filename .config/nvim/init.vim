@@ -104,5 +104,5 @@ let g:lightline = {
 " accelerated-jk settings
 nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
-let g:accelerated_jk_acceleration_table = [10,20,30,40,50,60,70,80]
+let g:accelerated_jk_acceleration_table = [30,60,90,120,150,180]
 
