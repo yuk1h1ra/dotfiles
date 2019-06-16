@@ -14,6 +14,7 @@ Plug 'rhysd/accelerated-jk'
 Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'vim-jp/vimdoc-ja'
 
 Plug 'leafgarland/typescript-vim'
 
@@ -53,6 +54,9 @@ set softtabstop=4
 set wildmenu wildmode=list
 
 set signcolumn=yes
+
+" help mapping
+nnoremap <C-h> :h<Space>
 
 " transparent background
 let g:seiya_auto_enable = 1
