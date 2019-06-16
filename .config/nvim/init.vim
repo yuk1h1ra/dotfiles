@@ -52,6 +52,8 @@ set softtabstop=4
 
 set wildmenu wildmode=list
 
+set signcolumn=yes
+
 " transparent background
 let g:seiya_auto_enable = 1
 
@@ -60,7 +62,6 @@ let g:winresizer_vert_resize = 1
 let g:winresizer_horiz_resize = 1
 
 " ale settings
-let g:ale_sign_column_always = 1
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_insert_leave = 1
