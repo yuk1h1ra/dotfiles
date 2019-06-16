@@ -12,9 +12,6 @@ Plug 'alvan/vim-closetag'
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
 Plug 'rhysd/accelerated-jk'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/neosnippet-snippets'
 
 call plug#end()
 
@@ -102,10 +99,3 @@ nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
 let g:accelerated_jk_acceleration_table = [10,20,30,40,50,60,70,80]
 
-" deoplete settings
-let g:deoplete#enable_at_startup = 1
-
-" neosnippet settings
-imap <C-k> <Plug>(neosnippet_expand_or_jump)
-smap <C-k> <Plug>(neosnippet_expand_or_jump)
-xmap <C-k> <Plug>(neosnippet_expand_target)
