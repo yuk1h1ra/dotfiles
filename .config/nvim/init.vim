@@ -32,7 +32,7 @@ set smartcase
 
 set noswapfile
 set clipboard=unnamedplus
-set list listchars=tab:>-,trail:-
+set list listchars=tab:>-,trail:~
 
 " colorscheme
 set termguicolors
