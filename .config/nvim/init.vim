@@ -51,11 +51,9 @@ highlight SignColumn ctermbg=none guibg=none
 highlight VertSplit ctermbg=none guibg=none
 highlight NonText ctermbg=none guibg=none
 
-" ここらへんをもう少しキレイに
-set expandtab
 set autoindent
 set smartindent
-set tabstop=4
+
 set shiftwidth=4
 set softtabstop=4
 
