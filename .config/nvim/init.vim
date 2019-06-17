@@ -32,7 +32,7 @@ set smartcase
 
 set noswapfile
 set clipboard=unnamedplus
-set list listchars=tab:>-,trail:~
+set list listchars=tab:>-,trail:･
 
 set laststatus=2
 set noshowmode
@@ -41,7 +41,7 @@ set noshowmode
 set termguicolors
 syntax enable
 colorscheme tender
-" highlight LineNr ctermfg=gray
+highlight LineNr ctermfg=gray
 highlight clear CursorLine
 
 " 背景を透過
@@ -64,7 +64,8 @@ set wildmenu wildmode=list
 set signcolumn=yes
 
 " help mapping
-nnoremap <C-h> :h<Space>
+" detail for :help c_CTRL-u
+nnoremap <C-h> :<C-u>help<Space>
 
 " winresizer resize size
 let g:winresizer_vert_resize = 1
