@@ -5,7 +5,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'airblade/vim-gitgutter'
 Plug 'cohama/lexima.vim'
-Plug 'miyakogi/seiya.vim'
 Plug 'simeji/winresizer'
 Plug 'alvan/vim-closetag'
 Plug 'w0rp/ale'
@@ -36,12 +35,21 @@ set clipboard=unnamedplus
 set list listchars=tab:>-,trail:-
 
 " colorscheme
+set termguicolors
 syntax enable
 colorscheme tender
 set laststatus=2
 set noshowmode
-highlight LineNr ctermfg=gray
+" highlight LineNr ctermfg=gray
 highlight clear CursorLine
+
+" 背景を透過
+" ここをプラグイン化する
+highlight Normal ctermbg=none guibg=none
+highlight LineNr ctermbg=none guibg=none
+highlight SignColumn ctermbg=none guibg=none
+highlight VertSplit ctermbg=none guibg=none
+highlight NonText ctermbg=none guibg=none
 
 " ここらへんをもう少しキレイに
 set expandtab
@@ -57,9 +65,6 @@ set signcolumn=yes
 
 " help mapping
 nnoremap <C-h> :h<Space>
-
-" transparent background
-let g:seiya_auto_enable = 1
 
 " winresizer resize size
 let g:winresizer_vert_resize = 1
