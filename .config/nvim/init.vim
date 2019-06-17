@@ -34,12 +34,13 @@ set noswapfile
 set clipboard=unnamedplus
 set list listchars=tab:>-,trail:~
 
+set laststatus=2
+set noshowmode
+
 " colorscheme
 set termguicolors
 syntax enable
 colorscheme tender
-set laststatus=2
-set noshowmode
 " highlight LineNr ctermfg=gray
 highlight clear CursorLine
 
@@ -54,8 +55,9 @@ highlight NonText ctermbg=none guibg=none
 set autoindent
 set smartindent
 
-set shiftwidth=4
-set softtabstop=4
+set tabstop=8
+set shiftwidth=2
+set softtabstop=2
 
 set wildmenu wildmode=list
 
