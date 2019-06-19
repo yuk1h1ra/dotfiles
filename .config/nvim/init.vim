@@ -1,5 +1,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
+Plug 'yuk1h1ra/transparent.vim'
 Plug 'jacoborus/tender.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'thinca/vim-quickrun'
@@ -43,14 +44,6 @@ syntax enable
 colorscheme tender
 highlight LineNr ctermfg=gray
 highlight clear CursorLine
-
-" 背景を透過
-" ここをプラグイン化する
-highlight Normal ctermbg=none guibg=none
-highlight LineNr ctermbg=none guibg=none
-highlight SignColumn ctermbg=none guibg=none
-highlight VertSplit ctermbg=none guibg=none
-highlight NonText ctermbg=none guibg=none
 
 set autoindent
 set smartindent
