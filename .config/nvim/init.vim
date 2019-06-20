@@ -17,7 +17,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'vim-jp/vimdoc-ja'
 Plug 'reireias/vim-cheatsheet'
 Plug 'Shougo/defx.nvim', { 'do': 'UpdateRemotePlugins' }
-" Plug 'kristijanhusak/defx-icons'
+Plug 'kristijanhusak/defx-icons'
 
 Plug 'leafgarland/typescript-vim'
 
@@ -111,12 +111,9 @@ let g:accelerated_jk_acceleration_table = [30,60,90,120,150,180]
  " vim-cheatsheet
 let g:cheatsheet#cheat_file = '~/.cheatsheet.md'
 
-" floating window setting
-" highlight NormalFloat cterm=bold ctermbg=darkblue gui=bold guibg=darkblue
-
 " Defx.nvim settings
 nnoremap <silent> <C-e>
-\ :<C-u>Defx -show-ignored-files -split=floating<CR>
+\ :<C-u>Defx -show-ignored-files -split=floating -columns=icons:filename:type<CR>
 autocmd FileType defx call s:defx_settings()
 function! s:defx_settings() abort
   " Define mappings
