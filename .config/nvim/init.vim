@@ -111,6 +111,12 @@ let g:accelerated_jk_acceleration_table = [30,60,90,120,150,180]
  " vim-cheatsheet
 let g:cheatsheet#cheat_file = '~/.cheatsheet.md'
 
+" NormalFloat color
+augroup NormalFloatBG
+  autocmd!
+  autocmd BufWinEnter * highlight NormalFloat guibg=#282828
+augroup END
+
 " Defx.nvim settings
 nnoremap <silent> <C-e>
 \ :<C-u>Defx -show-ignored-files -split=floating -columns=icons:filename:type<CR>
