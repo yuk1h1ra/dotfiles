@@ -119,7 +119,7 @@ augroup END
 
 " Defx.nvim settings
 nnoremap <silent> <C-e>
-\ :<C-u>Defx -show-ignored-files -split=floating -columns=icons:filename:type<CR>
+\ :<C-u>Defx -show-ignored-files -toggle -split=floating -columns=icons:filename:type<CR>
 autocmd FileType defx call s:defx_settings()
 function! s:defx_settings() abort
   " Define mappings
