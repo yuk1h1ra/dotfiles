@@ -15,7 +15,6 @@ Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'vim-jp/vimdoc-ja'
-Plug 'reireias/vim-cheatsheet'
 Plug 'Shougo/defx.nvim', { 'do': 'UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
 Plug 'kristijanhusak/defx-git'
