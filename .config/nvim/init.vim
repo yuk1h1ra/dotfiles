@@ -18,6 +18,7 @@ Plug 'vim-jp/vimdoc-ja'
 Plug 'reireias/vim-cheatsheet'
 Plug 'Shougo/defx.nvim', { 'do': 'UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
+Plug 'kristijanhusak/defx-git'
 
 Plug 'leafgarland/typescript-vim'
 
@@ -25,6 +26,7 @@ call plug#end()
 
 set number
 set cursorline
+set ambiwidth=double
 
 set autoread
 set hidden
@@ -114,7 +116,7 @@ let g:cheatsheet#cheat_file = '~/.cheatsheet.md'
 
 " Defx.nvim settings
 nnoremap <silent> <C-e>
-\ :<C-u>Defx -show-ignored-files -toggle -split=floating -columns=icons:filename:type<CR>
+\ :<C-u>Defx -show-ignored-files -toggle -split=floating -columns=mark:git:indent:icons:filename:type<CR>
 autocmd FileType defx call s:defx_settings()
 function! s:defx_settings() abort
   " Define mappings
@@ -146,7 +148,7 @@ function! s:defx_settings() abort
   \ defx#do_action('new_multiple_files')
   nnoremap <silent><buffer><expr> C
   \ defx#do_action('toggle_columns',
-  \                'mark:indent:icon:filename:type:size:time')
+  \                'mark:git:indent:icons:filename:type:size:time')
   nnoremap <silent><buffer><expr> S
   \ defx#do_action('toggle_sort', 'time')
   nnoremap <silent><buffer><expr> d
@@ -173,10 +175,6 @@ function! s:defx_settings() abort
   \ defx#do_action('toggle_select') . 'j'
   nnoremap <silent><buffer><expr> *
   \ defx#do_action('toggle_select_all')
-  nnoremap <silent><buffer><expr> j
-  \ line('.') == line('$') ? 'gg' : 'j'
-  nnoremap <silent><buffer><expr> k
-  \ line('.') == 1 ? 'G' : 'k'
   nnoremap <silent><buffer><expr> <C-l>
   \ defx#do_action('redraw')
   nnoremap <silent><buffer><expr> <C-g>
