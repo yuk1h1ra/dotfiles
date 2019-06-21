@@ -25,7 +25,6 @@ call plug#end()
 
 set number
 set cursorline
-set ambiwidth=double
 
 set autoread
 set hidden
