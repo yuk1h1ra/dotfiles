@@ -46,6 +46,7 @@ set termguicolors
 syntax enable
 colorscheme tender
 highlight clear CursorLine
+highlight NormalFloat guibg=#484848
 
 set autoindent
 set smartindent
@@ -110,12 +111,6 @@ let g:accelerated_jk_acceleration_table = [30,60,90,120,150,180]
 
  " vim-cheatsheet
 let g:cheatsheet#cheat_file = '~/.cheatsheet.md'
-
-" NormalFloat color
-augroup NormalFloatBG
-  autocmd!
-  autocmd BufWinEnter * highlight NormalFloat guibg=#282828
-augroup END
 
 " Defx.nvim settings
 nnoremap <silent> <C-e>
