@@ -135,8 +135,12 @@ function! s:defx_settings() abort
   \ defx#do_action('open') :
   \ defx#do_action('multi', ['drop', 'quit'])
   nnoremap <silent><buffer><expr> E
+  \ defx#is_directory() ?
+  \ defx#do_action('open') :
   \ defx#do_action('multi', [['drop', 'vsplit'], 'quit'])
   nnoremap <silent><buffer><expr> P
+  \ defx#is_directory() ?
+  \ defx#do_action('open') :
   \ defx#do_action('multi', [['drop', 'split'], 'quit'])
   nnoremap <silent><buffer><expr> o
   \ defx#do_action('open_or_close_tree')
