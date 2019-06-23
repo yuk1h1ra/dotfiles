@@ -2,6 +2,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'yuk1h1ra/transparent.vim'
 Plug 'jacoborus/tender.vim'
+Plug 'altercation/vim-colors-solarized'
 Plug 'itchyny/lightline.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'airblade/vim-gitgutter'
