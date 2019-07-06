@@ -2,8 +2,21 @@
 
 DOTFILE_PATH="$(cd $(dirname $0)/.. && pwd)"
 
+# vimrc
 ln -snfv "$DOTFILE_PATH/.vimrc" "$HOME/.vimrc"
+
+# tmux.conf
 ln -snfv "$DOTFILE_PATH/.tmux.conf" "$HOME/.tmux.conf"
+
+# init.vim
+if [ ! -d "$HOME/.config/nvim" ]; then
+	mkdir -p "$HOME/.config/nvim"
+fi
 ln -snfv "$DOTFILE_PATH/.config/nvim/init.vim" "$HOME/.config/nvim/init.vim"
+
+# alacritty
+if [ ! -d "$HOME/.config/alacritty" ]; then
+	mkdir -p "$HOME/.config/alacritty"
+fi
 ln -snfv "$DOTFILE_PATH/.config/alacritty/alacritty.yml" "$HOME/.config/alacritty/alacritty.yml"
 
