@@ -78,9 +78,14 @@ let g:ale_sign_warning = "\uf071"
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
 let g:ale_fixers = {
+    \ 'cpp': ['clang-format'],
     \ 'python': ['autopep8', 'isort'],
+    \ 'ruby': ['rubocop'],
+    \ 'javascript': ['prettier']
     \ }
+let g:ale_cpp_clang_options = '-style=Google'
 let g:ale_python_autopep8_options = '--aggressive --aggressive'
+let g:ale_javascript_pretier_use_local_config = 1
 
 " lightline settings
 let g:lightline#ale#indicator_checking =  "\uf110 "
