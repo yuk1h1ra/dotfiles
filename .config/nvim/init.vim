@@ -2,7 +2,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'yuk1h1ra/transparent.vim'
 Plug 'jacoborus/tender.vim'
-Plug 'altercation/vim-colors-solarized'
 Plug 'itchyny/lightline.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'airblade/vim-gitgutter'
@@ -109,9 +108,6 @@ let g:lightline = {
 nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
 let g:accelerated_jk_acceleration_table = [30,60,90,120,150,180]
-
- " vim-cheatsheet
-let g:cheatsheet#cheat_file = '~/.cheatsheet.md'
 
 " Defx.nvim settings
 nnoremap <silent> <C-e>
