@@ -1,4 +1,4 @@
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/.vim/plugged')
 
 Plug 'yuk1h1ra/transparent.vim'
 Plug 'jacoborus/tender.vim'
@@ -38,7 +38,6 @@ set laststatus=2
 set noshowmode
 
 " colorscheme
-set termguicolors
 syntax enable
 colorscheme tender
 highlight clear CursorLine
