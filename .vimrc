@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'yuk1h1ra/transparent.vim'
-Plug 'jacoborus/tender.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'itchyny/lightline.vim'
 Plug 'thinca/vim-quickrun'
@@ -39,7 +38,7 @@ set noshowmode
 
 " colorscheme
 syntax enable
-colorscheme tender
+colorscheme solarized
 highlight clear CursorLine
 highlight NormalFloat guibg=#484848
 
@@ -76,7 +75,7 @@ let g:lightline#ale#indicator_errors = "\uf05e "
 let g:lightline#ale#indicator_ok = "\uf00c "
 
 let g:lightline = {
-    \ 'colorscheme': 'tender',
+    \ 'colorscheme': 'solarized',
     \ 'component_expand': {
     \     'linter_checking': 'lightline#ale#checking',
     \     'linter_warnings': 'lightline#ale#warnings',
