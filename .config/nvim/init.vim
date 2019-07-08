@@ -15,6 +15,7 @@ Plug 'tpope/vim-surround'
 Plug 'tomtom/tcomment_vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'vim-jp/vimdoc-ja'
+Plug 'mattn/sonictemplate-vim'
 Plug 'Shougo/defx.nvim', { 'do': 'UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
 Plug 'kristijanhusak/defx-git'
@@ -108,6 +109,9 @@ let g:lightline = {
 nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
 let g:accelerated_jk_acceleration_table = [30,60,90,120,150,180]
+
+" sonictemplate settings
+let g:sonictemplate_vim_template_dir = "$HOME/.config/nvim/template"
 
 " Defx.nvim settings
 nnoremap <silent> <C-e>
