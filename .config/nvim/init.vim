@@ -71,9 +71,16 @@ let g:winresizer_horiz_resize = 1
 
 " ale settings
 let g:ale_lint_on_enter = 0
+let g:ale_lint_on_text_changed = 1
+let g:ale_fix_on_save = 1
 let g:ale_sign_error = "\uf05e"
 let g:ale_sign_warning = "\uf071"
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
+let g:ale_fixers = {
+    \ 'python': ['autopep8', 'isort'],
+    \ }
+let g:ale_python_autopep8_options = '--aggressive --aggressive'
 
 " lightline settings
 let g:lightline#ale#indicator_checking =  "\uf110 "
