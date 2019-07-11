@@ -21,3 +21,5 @@ if [ ! -d "$HOME/.config/alacritty" ]; then
 fi
 ln -snfv "$DOTFILE_PATH/.config/alacritty/alacritty.yml" "$HOME/.config/alacritty/alacritty.yml"
 
+# gitignore_global
+ln -snfv "$DOTFILE_PATH/.gitignore_global" "$HOME/.gitignore_global"
