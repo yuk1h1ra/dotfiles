@@ -72,7 +72,6 @@ let g:winresizer_horiz_resize = 1
 " ale settings
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_insert_leave = 1
-let g:ale_fix_on_save = 1
 let g:ale_sign_error = "\uf05e"
 let g:ale_sign_warning = "\uf071"
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
