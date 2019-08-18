@@ -23,3 +23,6 @@ ln -snfv "$DOTFILE_PATH/.config/alacritty/alacritty.yml" "$HOME/.config/alacritt
 
 # gitignore_global
 ln -snfv "$DOTFILE_PATH/.gitignore_global" "$HOME/.gitignore_global"
+
+# libinput-gestures
+ln -snfv "$DOTFILE_PATH"/libinput-gestures.conf "$HOME/.config/libinput-gestures.conf"
