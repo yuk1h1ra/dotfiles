@@ -19,8 +19,7 @@ Plug 'mattn/sonictemplate-vim'
 Plug 'Shougo/defx.nvim', { 'do': 'UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-icons'
 Plug 'kristijanhusak/defx-git'
-
-Plug 'leafgarland/typescript-vim'
+Plug 'neovim/nvim-lsp'
 
 call plug#end()
 
