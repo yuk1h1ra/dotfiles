@@ -6,7 +6,7 @@ DOTFILE_PATH="$(cd $(dirname $0)/.. && pwd)"
 if [ ! -d "$HOME/.config/nvim" ]; then
   mkdir -p "$HOME/.config/nvim"
 fi
-ln -snfv "$DOTFILE_PATH/.config/nvim/init.vim" "$HOME/.config/nvim/init.vim"
+ln -snfv "$DOTFILE_PATH/neovim/init.vim" "$HOME/.config/nvim/init.vim"
 
 # Install vim-plug
 if [ ! -d "$HOME/.local/share/nvim/site/autoload/plug.vim" ]; then
