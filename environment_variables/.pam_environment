@@ -1,6 +1,0 @@
-BROWSER       DEFAULT=brave
-EDITOR        DEFAULT=nvim
-
-GTK_IM_MODULE DEFAULT=fcitx
-QT_IM_MODULE  DEFAULT=fcitx
-XMODIFIERS    DEFAULT=@im=fcitx

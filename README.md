@@ -72,21 +72,28 @@ _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
 sudo pacman -S alacritty
 ```
 
-## [environment_variables](https://wiki.archlinux.jp/index.php/%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0)
-
-### [fcitx-mozc](https://wiki.archlinux.jp/index.php/Fcitx)
+## [ibus-mozc](https://wiki.archlinux.jp/index.php/IBus)
 
 ```bash
-sudo pacman -S fcitx-mozc
-sudo pacman -S kcm-fcitx   # OR fcitx-configtool
+yay -S ibus ibus-qt ibus-mozc manjaro-asian-input-support-ibus
 ```
 
 after installed,
 
 ```bash
-fcitx-autostart
+ibus-setup
+qtconfig-qt4
 reboot
 ```
+
+after reboot,
+
+```bash
+ibus-deamon --panel=/usr/lib/kimpanel-ibus-panel
+./ibus-mozc/symbolic.sh
+```
+
+reboot last time
 
 ## [libinput-gestures](https://github.com/bulletmark/libinput-gestures)
 
