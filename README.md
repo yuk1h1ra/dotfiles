@@ -2,14 +2,15 @@
 
 I'm using Manjaro Linux KDE edition, so describe how to install packages on Manjaro Linux.
 
-
-## How to setup
+## **How to symbolic link**
 
 After installing a certain package, please run the following command
 
 ```bash
 ./<package_name>/symbolic.sh
 ```
+
+## **How to install**
 
 ## [prezto](https://github.com/sorin-ionescu/prezto)
 
@@ -32,6 +33,37 @@ Set Zsh as your default shell:
 
 ```bash
 chsh -s /usr/bin/zsh
+```
+
+## [nvm](https://github.com/nvm-sh/nvm)
+
+```bash
+sudo pacman -S nvm
+```
+
+after installed,
+
+```bash
+echo ‘## nvm
+source /usr/share/nvm/init-nvm.sh’ >> ~/.zshrc
+```
+
+## [burpsuite](https://portswigger.net/burp)
+
+```bash
+yay -S burpsuite
+```
+
+after installed,
+
+```bash
+sudoedit /etc/environment
+```
+
+Add the following at the end
+
+```/etc/environment
+_JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
 ```
 
 ## [alacritty](https://github.com/alacritty/alacritty)
