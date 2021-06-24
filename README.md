@@ -1,6 +1,6 @@
 # dotfiles
 
-I'm using Manjaro Linux, so describe how to install packages on Manjaro Linux.
+I'm using Manjaro Linux KDE edition, so describe how to install packages on Manjaro Linux.
 
 
 ## How to setup
@@ -11,13 +11,36 @@ After installing a certain package, please run the following command
 ./<package_name>/symbolic.sh
 ```
 
+## [prezto](https://github.com/sorin-ionescu/prezto)
+
+Clone the repository:
+
+```bash
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+```
+
+Create a new Zsh configuration by copying/linking the Zsh configuration files provided:
+
+```bash
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+```
+
+Set Zsh as your default shell:
+
+```bash
+chsh -s /usr/bin/zsh
+```
+
 ## [alacritty](https://github.com/alacritty/alacritty)
 
 ```bash
 sudo pacman -S alacritty
 ```
 
-## environment_variables
+## [environment_variables](https://wiki.archlinux.jp/index.php/%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0)
 
 ### [fcitx-mozc](https://wiki.archlinux.jp/index.php/Fcitx)
 
