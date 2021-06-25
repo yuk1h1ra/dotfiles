@@ -35,6 +35,18 @@ Set Zsh as your default shell:
 chsh -s /usr/bin/zsh
 ```
 
+## [poetry](https://github.com/poetry/poetry)
+
+```bash
+sudo pacman -S python-poetry
+```
+
+after installed,
+
+```bash
+poetry completions zsh > ~/.zprezto/modules/completion/external/src/_poetry
+```
+
 ## [nvm](https://github.com/nvm-sh/nvm)
 
 ```bash
@@ -72,25 +84,18 @@ _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
 sudo pacman -S alacritty
 ```
 
-## [ibus-mozc](https://wiki.archlinux.jp/index.php/IBus)
+## [fcitx-mozc](https://wiki.archlinux.jp/index.php/Fcitx)
 
 ```bash
-yay -S ibus ibus-qt ibus-mozc manjaro-asian-input-support-ibus
+sudo pacman -S fcitx-mozc manjaro-asian-input-support-fcitx
+sudo pacman -S kcm-fcitx
 ```
 
 after installed,
 
 ```bash
-ibus-setup
-qtconfig-qt4
+fcitx-autostart
 reboot
-```
-
-after reboot,
-
-```bash
-ibus-deamon --panel=/usr/lib/kimpanel-ibus-panel
-./ibus-mozc/symbolic.sh
 ```
 
 reboot last time
