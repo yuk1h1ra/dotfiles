@@ -53,11 +53,11 @@ poetry completions zsh > ~/.zprezto/modules/completion/external/src/_poetry
 sudo pacman -S nvm
 ```
 
-after installed,
+after installed, edit .zshrc:
 
-```bash
-echo ‘## nvm
-source /usr/share/nvm/init-nvm.sh’ >> ~/.zshrc
+```.zshrc
+## nvm
+source /usr/share/nvm/init-nvm.sh
 ```
 
 ## [burpsuite](https://portswigger.net/burp)
