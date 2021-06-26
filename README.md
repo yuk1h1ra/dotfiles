@@ -41,10 +41,16 @@ chsh -s /usr/bin/zsh
 sudo pacman -S python-poetry
 ```
 
-after installed,
+after installed, run the following command for enable tab completion:
 
 ```bash
 poetry completions zsh > ~/.zprezto/modules/completion/external/src/_poetry
+```
+
+if create the virtualenv inside the project's root directory, run the following command:
+
+```bash
+poetry config virtualenvs.in-project true
 ```
 
 ## [nvm](https://github.com/nvm-sh/nvm)
