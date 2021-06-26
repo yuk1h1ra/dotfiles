@@ -100,6 +100,19 @@ reboot
 
 reboot last time
 
+## [fontconfig](https://wiki.archlinux.jp/index.php/%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E8%A8%AD%E5%AE%9A)
+
+```bash
+sudo pacman -S adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts
+yay -S ttf-hackgen-nerd
+```
+
+after symbolic link,
+
+```bash
+fc-cache -v
+```
+
 ## [libinput-gestures](https://github.com/bulletmark/libinput-gestures)
 
 ```bash
