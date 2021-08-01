@@ -130,8 +130,8 @@ sudo pacman -S libinput-gestures
 after installed,
 
 ```bash
-libinput-gestures desktop
-libinput-gestures autostart
+libinput-gestures-setup desktop
+libinput-gestures-setup autostart
 ```
 
 ## [neovim](https://github.com/neovim/neovim)
