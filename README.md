@@ -146,6 +146,14 @@ sudo pacman -S neovim python-pynvim
 sudo pacman -S tmux
 ```
 
+after installed,
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Press prefix + I (capital i, as in Install) 
+
 ## [vim](https://github.com/vim/vim)
 
 ```bash
