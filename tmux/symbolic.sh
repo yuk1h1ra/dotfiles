@@ -5,7 +5,9 @@ DOTFILE_PATH="$(cd $(dirname $0)/.. && pwd)"
 ln -snfv "$DOTFILE_PATH/tmux/.tmux.conf" "$HOME/.tmux.conf"
 
 # tpm
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+if [ ! -d ~/.tmux/plugins/tpm ]; then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
 
 # tmux-powerline
 if [ ! -d ~/.config/tmux-powerline/themes ]; then
